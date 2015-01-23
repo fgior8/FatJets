@@ -1,0 +1,10 @@
+prefix=/uscms/home/fgior8/nobackup/SubStructure/CMSSW_5_3_14_patch2/src/AWhitbeck/fftw
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: FFTW
+Description: fast Fourier transform library
+Version: 3.3.3
+Libs: -L${libdir} -lfftw3  -lm
+Cflags: -I${includedir}
