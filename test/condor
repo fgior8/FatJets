@@ -1,0 +1,13 @@
+universe = vanilla
+Executable = runner.sh 
+Should_Transfer_Files = YES
+WhenToTransferOutput = ON_EXIT
+Output = sleep_job$(Cluster).stdout
+Error = sleep_job$(Cluster).stderr
+Log = sleep_job$(Cluster).log
+notify_user = ferdinando.giordano@email.ucr.edu
+notification= Never
+arguments = $(Cluster) WJets.txt WJets
+Queue 1
+
+
